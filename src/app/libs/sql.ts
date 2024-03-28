@@ -15,13 +15,4 @@ connection.connect((err) => {
     throw err;
   }
   console.log('¡Conectado a la base de datos!');
-
-  connection.query('SELECT * FROM usuarios', (err, results) => {
-    if (err) {
-      throw err;
-    }
-    console.log(results);
-
-    connection.end();
-  });
 });
